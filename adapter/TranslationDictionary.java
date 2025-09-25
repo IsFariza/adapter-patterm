@@ -4,14 +4,13 @@ import java.util.HashMap;
 
 public class TranslationDictionary {
     static HashMap<String, String> dictionary = new HashMap<>();
-    public static HashMap<String, String> load(){
+    public static void load(){
 
         dictionary.put("hello", "Привет");
         dictionary.put("how are you?", "Как дела?");
         dictionary.put("i'm fine", "Я в порядке.");
         dictionary.put("thank you", "Спасибо");
         dictionary.put("goodbye", "До свидания.");
-        return dictionary;
     }
 
     public static String translate(String word){
@@ -22,3 +21,4 @@ public class TranslationDictionary {
         return russianWord;
     }
 }
+
