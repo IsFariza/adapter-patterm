@@ -6,7 +6,6 @@ public class TranslatorAdapter implements EnglishSpeaker{
 
     public TranslatorAdapter(){
         this.russianSpeaker=new RussianPerson();
-        TranslationDictionary.load();
     }
 
     @Override
@@ -14,3 +13,4 @@ public class TranslatorAdapter implements EnglishSpeaker{
         return russianSpeaker.speakRussian(TranslationDictionary.translate(word));
     }
 }
+
